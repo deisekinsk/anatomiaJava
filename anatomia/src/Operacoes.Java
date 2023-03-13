@@ -29,9 +29,15 @@ public class Operacoes{
      int numeroRecebe = 5;
      numeroRecebe = numeroRecebe * -1;
 
-     //incremento
+     //incremento e decremento
      numeroRecebe = 1;     
      numeroRecebe = numeroRecebe +1;
-     numeroRecebe++;    
+     numeroRecebe ++; //recebe a variável e depois incrementa
+     ++ numeroRecebe; //incrementa antes
+     -- numeroRecebe; //sinal negativo derementa
+
+     //inversão de valor boolean com '!'
+     boolean carteiraCNH = false;
+     !carteiraCNH;
 
 }

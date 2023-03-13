@@ -34,12 +34,31 @@ public class App {
         
     };
 
-        
+    public static void controleIdade(int calculaIdade) {
+        boolean resultadoIdade = true;
+
+        if(calculaIdade>=18){
+            resultadoIdade = true;
+            System.out.println( resultadoIdade + " Maior de idade. Pode passar");
+        }else{
+            resultadoIdade = false;
+            System.out.println(resultadoIdade + " Menor de idade. Necessário um/a responsável");
+        }
+    }
+    //Operador ternário
+    public static void refatoraControleIdade(int calculaIdade) {
+        //boolean resultadoIdade = true;
+        String resultadoIdade = calculaIdade>=18?" Maior de idade. Pode passar" : " Menor de idade. Necessário um/a responsável";
+        System.out.println("Refatora: "+resultadoIdade);
+    
+    }   
+    /**
+     * @param args
+     */
     public static void main(String[] args) {
         
         String primeiroNome = "Deise";
         String ultimoNome = "Silva";
-        
         
         int jogoDaSorte = 2023;
         int numeroRecebe = -7;
@@ -47,13 +66,20 @@ public class App {
    
 
         String nomeCompleto = nomeCompleto(primeiroNome, ultimoNome);
-
+        boolean carteiraCNH = false;
+        
+        //print
         System.out.println("I'm "+
             nomeCompleto + " and I start with Java Doc.");
-
-        media(5,7,9);
         System.out.println(" " + primeiroNome + " " + ultimoNome);
         System.out.println(2*+ jogoDaSorte);
-        System.out.println(numeroRecebe);
+        System.out.println(--numeroRecebe);
+        System.out.println(!carteiraCNH + " Possui CNH");
+        
+        //metodos
+        media(5,7,9);
+        controleIdade(17);
+        refatoraControleIdade(18);
+
     }
 }
