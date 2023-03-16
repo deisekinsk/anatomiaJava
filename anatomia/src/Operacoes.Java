@@ -8,12 +8,13 @@ public class Operacoes{
 
     String nome = "KINSK";
     double peso = 68.5;
-    char sexo = 'N/A';
+    char sexo = 'A';
     boolean CNHA = false;
-    Date dataNascimento = new Date();
+    //Date dataNascimento = new Date();
 
-    public int idade = 1988 - ANO_ATUAL;
-    public final ANO_ATUAL = 2023;
+    
+    //ublic anoAtual = 2023;
+    //public int idade = 1988 - anotAtual;
 
 
     //Operadores Aritiméticos
@@ -38,6 +39,17 @@ public class Operacoes{
 
      //inversão de valor boolean com '!'
      boolean carteiraCNH = false;
-     !carteiraCNH;
+     //!carteiraCNH;
+
+     //operadores lógicos && ou ||
+
+     boolean verdadeiro = true;
+     boolean falso = false;
+
+     if(verdadeiro && falso){
+        System.out.println("Condições atendidas");
+     }else{
+        System.out.println("Não atende os critérios");
+     };
 
 }

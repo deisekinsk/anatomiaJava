@@ -44,7 +44,7 @@ public class App {
             resultadoIdade = false;
             System.out.println(resultadoIdade + " Menor de idade. Necessário um/a responsável");
         }
-    }
+    };
     //Operador ternário
     public static void refatoraControleIdade(int calculaIdade) {
         String resultadoIdade = calculaIdade>=18?" Maior de idade. Pode passar" : " Menor de idade. Necessário um/a responsável";
@@ -53,7 +53,7 @@ public class App {
         int resultadoIdadeA = calculaIdade>=18 ?calculaIdade : calculaIdade;
         System.out.println("Usuário tem " + resultadoIdadeA + " anos.");
     
-    }
+    };
     //equals
     public static void comparaNome( String primeiroNome,
     String ultimoNome) {
@@ -62,7 +62,7 @@ public class App {
         ultimoNome = new String ("Silva");
         System.out.println(ultimoNome.equals(ultimoNome));
         
-    }
+    };
     /**
      * @param args
      */
@@ -75,6 +75,10 @@ public class App {
         boolean carteiraCNH = false;
 
         String nomeCompleto = "Deise";
+
+        //Objeto chama o método
+        ControleSmartTV controleSmartTV = new ControleSmartTV();
+        Metodos metodos = new Metodos();
         
         //print
         System.out.println("I'm "+
@@ -82,6 +86,20 @@ public class App {
         System.out.println(2*+ jogoDaSorte);
         System.out.println(--numeroRecebe);
         System.out.println(!carteiraCNH + " Possui CNH");
+
+
+        controleSmartTV.desligar();
+        System.out.println("Ligada " +controleSmartTV.ligada);
+        controleSmartTV.mudarCanal(12);
+        System.out.println("Canal atual "+controleSmartTV.canal);
+        controleSmartTV.diminiuVolume();
+        System.out.println("Volume atual "+controleSmartTV.volume);
+
+        System.out.println(
+            metodos.dividir(20, 4));
+        System.out.println(
+            metodos.somar(1988,2023)
+        );
         
         //metodos
         media(5,7,9);
