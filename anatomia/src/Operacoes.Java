@@ -35,7 +35,7 @@ public class Operacoes{
      numeroRecebe = numeroRecebe +1;
      numeroRecebe ++; //recebe a variável e depois incrementa
      ++ numeroRecebe; //incrementa antes
-     -- numeroRecebe; //sinal negativo derementa
+     -- numeroRecebe; //sinal negativo deCrementa
 
      //inversão de valor boolean com '!'
      boolean carteiraCNH = false;
@@ -50,6 +50,7 @@ public class Operacoes{
         System.out.println("Condições atendidas");
      }else{
         System.out.println("Não atende os critérios");
-     };
+   
+      }
 
 }

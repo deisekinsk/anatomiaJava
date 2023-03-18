@@ -19,10 +19,10 @@
  public class Metodos {
          public double somar (int numA, int numB){
            return numA + numB;
-         };
+         }
 
          public double dividir (int dividendo, int divisor) {
             return dividendo/divisor;
-         };
+         }
 
 }

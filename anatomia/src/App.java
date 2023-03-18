@@ -1,11 +1,15 @@
-/*
- * Comece com Javadoc
- * <p> Javadoc reconhece HTML</p>
- * <li> Usa tags de documentação</li>
+/**
+ * <h1>Comece com Javadoc</h1>
+ * O Javadoc aceita algumas sintaxes do HTML.
+ * <p>
+ * <b>Note: </b> A documentação ajuda a compreender o script.
+ * 
+ * @author Deise Kinsk - https://github.com/deisekinsk
+ * https://www.linkedin.com/in/deise-kinsk-profile/
+ *
+ * <li> Javadoc possui tags próprias de documentação</li>
  * Tags: @see @author @version @param @return @exception @deprecated @since
  * 
- * @author Deise Kinsk, kinsk@msn.com
- * Linkedin: https://www.linkedin.com/in/deise-kinsk-profile/
  */
 
 public class App {  
@@ -13,12 +17,12 @@ public class App {
     public static Integer somar (int numA, int numB){
         return numA+numB;
 
-    };
+    }
 
     public static String nomeCompleto(String primeiroNome, String ultimoNome){
         return primeiroNome.concat(" ").concat(ultimoNome);
 
-    };
+    }
 
     public static void media(int notaA, int notaB, int notaC){
         int mediaFinal;
@@ -32,7 +36,7 @@ public class App {
             System.out.println("REPROVADO");
         }    
         
-    };
+    }
 
     public static void controleIdade(int calculaIdade) {
         boolean resultadoIdade = true;
@@ -44,7 +48,7 @@ public class App {
             resultadoIdade = false;
             System.out.println(resultadoIdade + " Menor de idade. Necessário um/a responsável");
         }
-    };
+    }
     //Operador ternário
     public static void refatoraControleIdade(int calculaIdade) {
         String resultadoIdade = calculaIdade>=18?" Maior de idade. Pode passar" : " Menor de idade. Necessário um/a responsável";
@@ -53,7 +57,7 @@ public class App {
         int resultadoIdadeA = calculaIdade>=18 ?calculaIdade : calculaIdade;
         System.out.println("Usuário tem " + resultadoIdadeA + " anos.");
     
-    };
+    }
     //equals
     public static void comparaNome( String primeiroNome,
     String ultimoNome) {
@@ -62,7 +66,7 @@ public class App {
         ultimoNome = new String ("Silva");
         System.out.println(ultimoNome.equals(ultimoNome));
         
-    };
+    }
     /**
      * @param args
      */
