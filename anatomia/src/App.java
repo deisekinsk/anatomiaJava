@@ -1,3 +1,6 @@
+import java.util.Locale;
+import java.util.Scanner;
+
 /**
  * <h1>Comece com Javadoc</h1>
  * O Javadoc aceita algumas sintaxes do HTML.
@@ -70,6 +73,7 @@ public class App {
     /**
      * @param args
      */
+    
     public static void main(String[] args) {
         
         int jogoDaSorte = 2023;
@@ -109,7 +113,14 @@ public class App {
         media(5,7,9);
         controleIdade(17);
         refatoraControleIdade(18);
-        comparaNome("Deise","Silva");        
+        comparaNome("Deise","Silva");
+        
+        //Scan, obtém e imprimi os dados inseridos pelo usuário
+        Scanner scan = new Scanner(System.in).useLocale(Locale.US);
+        System.out.println("|||Mudar Canal.|||\n ***Insira um número válido***");
+        controleSmartTV.canal = scan.nextInt();
+
+        System.out.println("Canal Atual é "+controleSmartTV.canal+".\n****Fim do programa****");
         
 
     }
